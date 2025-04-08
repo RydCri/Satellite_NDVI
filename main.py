@@ -91,7 +91,7 @@ for location in locations:
 
             if ndvi_change_data is not None:
                 print(f"NDVI change calculated for {location} (using _rectified B08 and B04 bands)")
-                visualize_ndvi_change(ndvi_change_data, profile, output_plot_path)
+                visualize_ndvi_change(ndvi_change_data, location, output_plot_path)
                 print(f"NDVI change visualization saved to {output_plot_path}")
         else:
             print(f"Error: Could not find B08 (NIR) and B04 (Red) TIFF files in imgs_1_rect or imgs_2_rect for {location}")
