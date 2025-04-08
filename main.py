@@ -3,6 +3,7 @@ import rasterio
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def calculate_ndvi(nir, red):
     """Calculates the Normalized Difference Vegetation Index."""
     numerator = nir - red
